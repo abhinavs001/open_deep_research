@@ -7,6 +7,9 @@ from langchain_core.runnables import RunnableConfig
 from langgraph.constants import Send
 from langgraph.graph import START, END, StateGraph
 from langgraph.types import interrupt, Command
+from open_deep_research_extension.retrieval.chroma_vector_store import ChromaVectorStore
+from open_deep_research_extension.retrieval.reranker import rerank_documents
+
 
 from open_deep_research.state import (
     ReportStateInput,
@@ -412,16 +415,25 @@ def compile_final_report(state: ReportState):
 
     # Get sections
     sections = state["sections"]
-    completed_sections = {s.name: s.content for s in state["completed_sections"]}
+    completed_sections_raw = state["completed_sections"]
+    completed_sections = {s.name.strip().lower(): s.content for s in completed_sections_raw}
 
-    # Update sections with completed content while maintaining original order
+    missing = []
+    compiled = []
+
     for section in sections:
-        section.content = completed_sections[section.name]
+        key = section.name.strip().lower()
+        if key in completed_sections:
+            section.content = completed_sections[key]
+            compiled.append(section.content)
+        else:
+            missing.append(section.name)
 
-    # Compile final report
-    all_sections = "\n\n".join([s.content for s in sections])
-
-    return {"final_report": all_sections}
+    if missing:
+        print(f"⚠️ Warning: Missing completed content for: {missing}")
+    # Optionally: continue with partial report
+    # raise KeyError(f"Missing completed content for: {missing}")
+    return {"final_report": "\n\n".join(compiled)}
 
 def initiate_final_section_writing(state: ReportState):
     """Create parallel tasks for writing non-research sections.
@@ -443,6 +455,14 @@ def initiate_final_section_writing(state: ReportState):
         if not s.research
     ]
 
+def retrieve_local_documents(state: ReportState, config: RunnableConfig):
+    topic = state["topic"]
+    vectordb = ChromaVectorStore().load()
+    retriever = vectordb.as_retriever()
+    documents = retriever.invoke(topic)
+    reranked = rerank_documents(topic, documents)
+    return {"source_str": "\n\n".join([doc.page_content for doc in reranked]), "search_iterations": 0}
+
 # Report section sub-graph -- 
 
 # Add nodes 
@@ -463,6 +483,7 @@ builder = StateGraph(ReportState, input=ReportStateInput, output=ReportStateOutp
 builder.add_node("generate_report_plan", generate_report_plan)
 builder.add_node("human_feedback", human_feedback)
 builder.add_node("build_section_with_web_research", section_builder.compile())
+builder.add_node("retrieve_local_documents", retrieve_local_documents)
 builder.add_node("gather_completed_sections", gather_completed_sections)
 builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
@@ -471,6 +492,8 @@ builder.add_node("compile_final_report", compile_final_report)
 builder.add_edge(START, "generate_report_plan")
 builder.add_edge("generate_report_plan", "human_feedback")
 builder.add_edge("build_section_with_web_research", "gather_completed_sections")
+builder.add_edge("generate_report_plan", "retrieve_local_documents")
+builder.add_edge("retrieve_local_documents", "build_section_with_web_research")
 builder.add_conditional_edges("gather_completed_sections", initiate_final_section_writing, ["write_final_sections"])
 builder.add_edge("write_final_sections", "compile_final_report")
 builder.add_edge("compile_final_report", END)

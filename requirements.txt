@@ -1,0 +1,12 @@
+langchain
+langgraph
+openai
+chromadb
+pdfplumber
+python-docx
+python-dotenv
+exa-py
+linkup
+tavily
+duckduckgo-search
+beautifulsoup4

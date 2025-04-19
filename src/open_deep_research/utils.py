@@ -11,7 +11,7 @@ from urllib.parse import unquote
 
 from exa_py import Exa
 from linkup import LinkupClient
-from tavily import AsyncTavilyClient
+from tavily import AsyncTavilyClient 
 from duckduckgo_search import DDGS 
 from bs4 import BeautifulSoup
 

@@ -252,7 +252,7 @@ async def search_web(state: SectionState, config: RunnableConfig):
 
     return {"source_str": source_str, "search_iterations": state["search_iterations"] + 1}
 
-def write_section(state: SectionState, config: RunnableConfig) -> Command[Literal[END, "search_web"]]:
+def write_section(state: SectionState, config: RunnableConfig) -> Command[str]:
     """Write a section of the report and evaluate if more research is needed.
     
     This node:
@@ -429,10 +429,6 @@ def compile_final_report(state: ReportState):
         else:
             missing.append(section.name)
 
-    if missing:
-        print(f"⚠️ Warning: Missing completed content for: {missing}")
-    # Optionally: continue with partial report
-    # raise KeyError(f"Missing completed content for: {missing}")
     return {"final_report": "\n\n".join(compiled)}
 
 def initiate_final_section_writing(state: ReportState):

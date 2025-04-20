@@ -1,4 +1,5 @@
 from typing import Literal
+import difflib
 
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -397,9 +398,11 @@ def gather_completed_sections(state: ReportState):
     completed_report_sections = format_sections(completed_sections)
 
     return {"report_sections_from_research": completed_report_sections}
+import difflib
 
 def compile_final_report(state: ReportState):
-    """Compile all sections into the final report.
+    """
+    Compile all sections into the final report.
     
     This node:
     1. Gets all completed sections
@@ -411,23 +414,53 @@ def compile_final_report(state: ReportState):
         
     Returns:
         Dict containing the complete report
+
+    This function:
+    1. Matches planned sections to completed ones using exact or fuzzy matching.
+    2. Adds unmatched completed sections at the end to avoid loss of content.
+
+    Args:
+        state (ReportState): The current state containing 'sections' and 'completed_sections'.
+
+    Returns:
+        dict: A dictionary with the final compiled report under the key 'final_report'.
     """
 
-    # Get sections
     sections = state["sections"]
     completed_sections_raw = state["completed_sections"]
-    completed_sections = {s.name.strip().lower(): s.content for s in completed_sections_raw}
 
-    missing = []
+    # Build a normalized lookup of completed sections by name
+    completed_lookup = {
+        s.name.strip().lower(): s for s in completed_sections_raw
+    }
+
+    used_keys = set()
     compiled = []
 
     for section in sections:
         key = section.name.strip().lower()
-        if key in completed_sections:
-            section.content = completed_sections[key]
+        matched_section = completed_lookup.get(key)
+
+        # Fuzzy match if exact key not found
+        if not matched_section:
+            close_matches = difflib.get_close_matches(
+                key, completed_lookup.keys(), n=1, cutoff=0.6
+            )
+            if close_matches:
+                matched_section = completed_lookup[close_matches[0]]
+
+        if matched_section:
+            used_keys.add(matched_section.name.strip().lower())
+            section.content = matched_section.content
             compiled.append(section.content)
         else:
-            missing.append(section.name)
+            print(f"⚠️ Warning: Missing completed content for: {section.name}")
+
+    # Add any unmatched generated sections at the end
+    for key, sec in completed_lookup.items():
+        if key not in used_keys:
+            print(f"➕ Including unmatched section: {sec.name}")
+            compiled.append(sec.content)
 
     return {"final_report": "\n\n".join(compiled)}
 

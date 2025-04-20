@@ -32,7 +32,7 @@ def normalize_section_key(name: str) -> str:
 
 async def main():
     # Check environment variables
-    required_keys = ["OPENAI_API_KEY", "TAVILY_API_KEY"]
+    required_keys = ["OPENAI_API_KEY", "TAVILY_API_KEY","LANGSMITH_API_KEY","ANTHROPIC_API_KEY","LINKUP_API_KEY","EXA_API_KEY","GOOGLE_API_KEY"]
     missing_keys = [key for key in required_keys if not os.getenv(key)]
     if missing_keys:
         print(f"Missing environment variables: {', '.join(missing_keys)}")

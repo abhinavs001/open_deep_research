@@ -444,7 +444,7 @@ def compile_final_report(state: ReportState):
         # Fuzzy match if exact key not found
         if not matched_section:
             close_matches = difflib.get_close_matches(
-                key, completed_lookup.keys(), n=1, cutoff=0.6
+                key, completed_lookup.keys(), n=3, cutoff=0.4
             )
             if close_matches:
                 matched_section = completed_lookup[close_matches[0]]

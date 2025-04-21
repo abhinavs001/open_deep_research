@@ -1,14 +1,97 @@
 Prompt: Summarize and compare the agency priority goals vs cross-agency priority goals as defined in OPM's 2022 strategy.
 Response:
+
 --- Phase 1: Planning ---
+Report plan generated!
+
+Generated Report Plan:
+Section 1: Introduction
+Description: Provides a brief overview of OPM's 2022 strategic framework and sets the context for the report.
+Research needed: No
+
+
+Section 2: Overview of Agency Priority Goals
+Description: Details the definition, implementation strategies, and performance measures of Agency Priority Goals as outlined in OPM's FY 2022-2026 Strategic Plan.
+Research needed: No
+
+
+Section 3: Overview of Cross-Agency Priority Goals
+Description: Explores the Cross-Agency Priority Goals including their framework under the Government Performance and Results Modernization Act, reporting mechanisms, and examples from recent performance reports.
+Research needed: No
+
+
+Section 4: Comparison between Agency and Cross-Agency Priority Goals
+Description: Analyzes similarities and differences between Agency and Cross-Agency Priority Goals, focusing on strategy, implementation, and reporting mechanisms.
+Research needed: No
+
+
+Section 5: Conclusion
+Description: Summarizes key findings with a concise distillation of the main points and a final comparative table outlining both types of goals.
+Research needed: No
+
+
+===== HUMAN FEEDBACK REQUIRED =====
+The graph will stop when the report plan is generated, and you can pass feedback to update the report plan.
+
+Does this report plan meet your needs? (type 'true' to approve or provide feedback): true
+Plan approved! Proceeding with research...
 
 --- Phase 2: Writing Research Sections ---
+No research sections to gather
 
 --- Phase 3: Writing Final Sections ---
-⚠️ Warning: Missing completed content for: Comparative Analysis
+
+Working on final section: Introduction
+Completed section: Introduction
+⚠️ Warning: Missing completed content for: Agency Priority Goals Overview
+⚠️ Warning: Missing completed content for: Cross-Agency Priority Goals Overview
+⚠️ Warning: Missing completed content for: Comparison Between Agency and Cross-Agency Priority Goals
 ⚠️ Warning: Missing completed content for: Conclusion and Summary
-➕ Including unmatched section: Comparison of APGs vs. CAPs
-➕ Including unmatched section: Comparison of APGs vs. CAPs
+Completed section: Introduction
+
+Working on final section: Overview of Agency Priority Goals
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+⚠️ Warning: Missing completed content for: Comparative Analysis: Agency vs Cross-Agency Priority Goals
+⚠️ Warning: Missing completed content for: Conclusion and Distilled Summary
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+
+Working on final section: Overview of Cross-Agency Priority Goals
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+Completed section: Overview of Cross-Agency Priority Goals
+⚠️ Warning: Missing completed content for: Conclusion
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+Completed section: Overview of Cross-Agency Priority Goals
+
+Working on final section: Comparison between Agency and Cross-Agency Priority Goals
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+Completed section: Overview of Cross-Agency Priority Goals
+Completed section: Comparison between Agency and Cross-Agency Priority Goals
+⚠️ Warning: Missing completed content for: Comparative Analysis
+⚠️ Warning: Missing completed content for: Conclusion
+➕ Including unmatched section: Comparison between Agency and Cross-Agency Priority Goals
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+Completed section: Overview of Cross-Agency Priority Goals
+Completed section: Comparison between Agency and Cross-Agency Priority Goals
+
+Working on final section: Conclusion
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+Completed section: Overview of Cross-Agency Priority Goals
+Completed section: Comparison between Agency and Cross-Agency Priority Goals
+Completed section: Conclusion
+⚠️ Warning: Missing completed content for: Comparative Analysis
+➕ Including unmatched section: Comparison between Agency and Cross-Agency Priority Goals
+Completed section: Introduction
+Completed section: Overview of Agency Priority Goals
+Completed section: Overview of Cross-Agency Priority Goals
+Completed section: Comparison between Agency and Cross-Agency Priority Goals
+Completed section: Conclusion
 
 --- Final Compilation ---
 
@@ -16,74 +99,75 @@ Response:
 
 📄 Final Report:
 ========================================
-# Introduction
-This report examines the key differences and similarities between Agency Priority Goals (APGs) and Cross-Agency Priority Goals (CAPs) as defined in OPM’s 2022 strategy. By comparing these two frameworks, the report highlights how individual agency efforts align with broader federal initiatives. It outlines the distinct focus areas, implementation strategies, and expected outcomes of each set of goals, providing a clear view of how both contribute to enhanced performance and accountability in government operations.
+# OPM 2022 Strategy Overview
 
-## Conclusion
-The comparison between APGs and CAPs reveals distinct yet complementary approaches to performance improvement. APGs focus on specific, agency-oriented objectives with a near-term outlook, while CAPs foster coordinated, interagency efforts addressing broader federal priorities. The structured review strategies and public updates for both ensure transparency and measurable progress, albeit with differing scopes and timeframes.
+The Office of Personnel Management’s 2022 strategic framework establishes clear distinctions between agency priority goals and cross-agency priority goals. The framework sets agency-specific objectives focused on internal mission execution, while simultaneously outlining collaborative initiatives that span multiple agencies. This report is motivated by the need to understand how these dual goal types support comprehensive and coordinated efforts across government. It explores how targeted internal efforts align with broader, cross-functional strategies to drive efficiency and enhanced service delivery.
 
-| Criteria       | APGs                                   | CAPs                                  |
-| -------------- | -------------------------------------- | ------------------------------------- |
-| Focus          | Agency-specific improvements           | Cross-agency shared digital goals     |
-| Timeframe      | Near-term, typically a two-year horizon| Longer-term, systemic impact          |
-| Implementation | Public goal setting & quarterly reviews| Regular performance reviews & updates  |
-| Scope          | Targeted, measurable agency outcomes   | Broad, multi-agency coordination      |
+## Conclusion and Next Steps
 
-The next step involves aligning these insights with actionable strategies that leverage both frameworks to drive overall federal performance improvements.
+This report highlights the distinct focus and scope of agency priority goals versus cross-agency goals. Agency priority goals center on tailored, mission-specific objectives, whereas cross-agency goals emphasize unified, collaborative action across departments. The following table summarizes key differences:
 
-## Overview of Agency Priority Goals
+| Element              | Agency Priority Goals          | Cross-Agency Goals            |
+|----------------------|--------------------------------|-------------------------------|
+| Focus                | Internal operations            | Interagency collaboration     |
+| Scope                | Mission-specific               | Broad, shared initiatives     |
+| Stakeholder Involvement | Limited to individual agencies | Inclusive of multiple agencies |
 
-Agency Priority Goals (APGs) are defined as the key performance improvement targets set by agency leadership to achieve measurable outcomes over a two-year period. They are designed to advance near-term mission outcomes, improve customer experiences, and enhance efficiencies. APGs play a critical role in performance improvement by linking leadership priorities to concrete, quantifiable results [2].
+These insights pave the way for deeper analysis into integration strategies, guiding future improvements to harmonize operations across federal agencies.
 
-The implementation of APGs involves a three-pronged approach. Firstly, goals are set publicly to ensure transparency and accountability. Secondly, agencies conduct data-driven performance review meetings with leadership at least quarterly. Finally, progress is communicated through quarterly updates on Performance.gov, fostering open information sharing with the public [1][4]. Examples include targets to improve quality workforce data and employee satisfaction regarding access to benefits and personnel information. These initiatives support agency efforts in achieving short-term milestones, while also aligning with broader strategic objectives laid out in their strategic plans [3].
+# Overview of Agency Priority Goals
 
-### Sources
-[1] 2024 Annual Performance Report - Agency Priority Goals: https://www.opm.gov/about-us/2024-annual-performance-report/agency-priority-goals/  
-[2] Agency Priority Goals - U.S. Office of Personnel Management: https://www.opm.gov/about-us/reports-publications/agency-plans/fy-2024-congressional-budget-justification/agency-priority-goals/  
-[3] Performance Framework | Performance.gov: https://www.performance.gov/about/performance-framework/  
-[4] Agency Priority Goals (APGs) Overview PDF: https://assets.performance.gov/pic-resources/Agency+Priority+Goals+(APGs)+Overview.pdf
-
-## Overview of Cross-Agency Priority Goals
-
-Cross-Agency Priority Goals (CAP Goals) align multiple federal agencies around shared objectives and enhance coordination under the President’s Management Agenda. Mandated by the Government Performance and Results Modernization Act, these goals are integrated into strategic plans and performance reports to ensure that efforts across agencies are unified and measurable [1]. They emphasize transparency and data-driven decision-making, providing a clear framework for assessing progress toward common operational targets.
-
-The strategic implementation of CAP Goals involves setting measurable targets, regular performance reviews, and public updates, which promote accountability and collaboration among federal agencies [2]. This systematic approach not only supports immediate agency needs but also fosters long-term interagency coordination to address complex government challenges. By connecting individual agency initiatives with broader federal priorities, CAP Goals play a crucial role in achieving the comprehensive improvements envisioned in OPM’s 2022-2026 Strategic Plan.
-
-### Sources
-[1] 2023 Annual Performance Report - Cross-Agency Priority Goals: https://www.opm.gov/about-us/2023-annual-performance-report/cross-agency-priority-goals/  
-[2] Performance Framework | Performance.gov: https://www.performance.gov/about/performance-framework/
-
-## Overview of Cross-Agency Priority Goals
-
-Cross-Agency Priority Goals (CAP Goals) align multiple federal agencies around shared objectives and enhance coordination under the President’s Management Agenda. Mandated by the Government Performance and Results Modernization Act, these goals are integrated into strategic plans and performance reports to ensure that efforts across agencies are unified and measurable [1]. They emphasize transparency and data-driven decision-making, providing a clear framework for assessing progress toward common operational targets.
-
-The strategic implementation of CAP Goals involves setting measurable targets, regular performance reviews, and public updates, which promote accountability and collaboration among federal agencies [2]. This systematic approach not only supports immediate agency needs but also fosters long-term interagency coordination to address complex government challenges. By connecting individual agency initiatives with broader federal priorities, CAP Goals play a crucial role in achieving the comprehensive improvements envisioned in OPM’s 2022-2026 Strategic Plan.
-
-### Sources
-[1] 2023 Annual Performance Report - Cross-Agency Priority Goals: https://www.opm.gov/about-us/2023-annual-performance-report/cross-agency-priority-goals/  
-[2] Performance Framework | Performance.gov: https://www.performance.gov/about/performance-framework/
+This report explores the tailored goals that individual agencies have adopted under OPM’s FY 2022-2026 Strategic Plan. It explains how each agency establishes its own priority objectives, the methods they use for implementation, and the performance measures that track progress. The report is motivated by the need to understand these agency-specific strategies and contrast them with broader, cross-agency initiatives, highlighting the importance of clear goal setting in enhancing efficiency and accountability.
 
 ## Conclusion
 
-In summary, the analysis reveals that Agency Priority Goals (APGs) and Cross-Agency Priority Goals (CAPs) serve complementary yet distinct functions within OPM’s 2022 strategy. The APGs are designed to drive agency-specific improvements, focusing on internal operational efficiency and tailored workforce transformation. Conversely, the CAPs aim at fostering inter-agency collaboration, emphasizing shared responsibility and measurable outcomes that span across different organizational boundaries. Both goal types strive for enhanced performance, yet they differ in their scope and implementation approach, with APGs leaning towards targeted internal reforms while CAPs concentrate on holistic, cross-cutting initiatives. The table below distills these key distinctions:
+This section compares agency priority goals with cross-agency priority goals. Agency priority goals focus on individualized strategies that align with each agency’s mission, emphasizing targeted performance measures and tailored implementation efforts. In contrast, cross-agency priority goals are developed through coordinated efforts that bridge agency boundaries to achieve collective impacts. These insights can guide agencies in refining strategic initiatives and promoting collaborative outcomes.
 
-| Dimension             | APGs                                      | CAPs                                       |
-|-----------------------|-------------------------------------------|--------------------------------------------|
-| Focus                 | Agency-specific transformation            | Inter-agency collaboration                 |
-| Scope                 | Internal operational efficiency           | Broad, system-wide improvements            |
-| Implementation        | Tailored, internal strategies             | Shared initiatives and collective outcomes |
-| Performance Metrics   | Customized indicators for agency progress | Common metrics for cross-agency success      |
+| Aspect               | Agency Priority Goals                                           | Cross-Agency Priority Goals                             |
+|----------------------|-----------------------------------------------------------------|---------------------------------------------------------|
+| Definition           | Agency-specific objectives aligned with individual missions     | Broad objectives that integrate efforts across agencies |
+| Implementation       | Tailored strategies and measures specific to each agency        | Coordinated approaches across multiple agencies         |
+| Performance Measures | Focused metrics that monitor agency-level progress                | Integrated metrics reflecting shared success            | 
 
-Next steps include aligning resource allocation to balance both individualized and collective improvement efforts within government operations.
+Next steps include exploring integrated frameworks to enhance inter-agency collaboration and improve overall performance outcomes.
 
-## Comparison of APGs vs. CAPs
+# Overview of Cross-Agency Priority Goals  
+This section highlights how cross-agency priority goals serve as a key element of the Government Performance and Results Modernization Act. It explains the framework behind these goals and the reporting mechanisms that help capture performance data across multiple agencies. The report also touches on examples from recent performance reports to show the practical implications of these goals. By linking agency-specific priorities with cross-agency objectives, the narrative sets the stage for a coordinated, outcome-based approach across government.
 
-Agency Priority Goals (APGs) are designed to focus on near-term improvements within individual agencies. They typically include specific, implementation-focused objectives such as improving employee satisfaction or service efficiency, with a planning horizon of about two years [1]. In contrast, Cross-Agency Priority Goals (CAPs) involve coordinated efforts across multiple agencies. These goals address broader issues that require interagency collaboration and align with overall federal priorities [2].
+## Summary and Next Steps  
+Across the report, comparisons between agency and cross-agency priorities reveal distinct yet complementary roles in government performance management. The table below distills core insights:
 
-Both APGs and CAPs are tied to performance measurement and strategic planning frameworks. However, APGs emphasize agency-specific outcomes with clear, measurable targets, whereas CAPs integrate performance indicators spanning different departments and are often linked to statutory requirements. For example, while APGs might aim to improve a satisfaction index score, CAPs focus on systemic changes that are evaluated through multiple performance metrics and longer-term strategic goals [1][3]. In essence, APGs are more immediate and tactical, while CAPs require a comprehensive, coordinated approach with enhanced transparency and interagency integration.
+| Dimension         | Agency Priority Goals         | Cross-Agency Priority Goals         |
+|-------------------|-------------------------------|-------------------------------------|
+| Focus             | Individual agency objectives  | Integrated, whole-of-government approach |
+| Accountability    | Agency-specific reporting     | Coordinated, shared reporting         |
+| Reporting Mechanism | Program-specific metrics      | Comprehensive performance data         |
+| Strategic Scope   | Narrower mission targets       | Broad, modernization-oriented goals    |
 
-### Sources
-[1] FY 2022 Agency Performance Report: https://www.opm.gov/about-us/reports-publications/fy-2022-agency-performance-report.pdf  
-[2] 2023 Annual Performance Report - Cross-Agency Priority Goals: https://www.opm.gov/about-us/2023-annual-performance-report/cross-agency-priority-goals/  
-[3] GAO-23-106354 Government Performance Management Letter: https://www.gao.gov/assets/gao-23-106354.pdf
+Moving forward, ensuring tighter alignment between these priorities will strengthen performance accountability and promote more effective government-wide initiatives.
+
+# Comparison between Agency and Cross-Agency Priority Goals  
+This report section delves into the nuances of agency-specific versus cross-agency priority goals outlined in OPM's 2022 strategy. It examines how each set of goals is designed, implemented, and monitored. The agency goals focus on tailored approaches that address unique operational challenges, while cross-agency goals emphasize collaboration and system-wide consistency. The narrative highlights how these goals are interwoven to support both individual agency accountability and the broader federal framework.
+
+## Comparison and Next Steps  
+In summary, while agency goals prioritize targeted strategies and custom reporting, cross-agency goals foster a unified strategic direction and standardized oversight. The following table distills the core differences and similarities:
+
+| Focus Area        | Agency Priority Goals               | Cross-Agency Priority Goals              |
+|-------------------|-------------------------------------|------------------------------------------|
+| Strategy          | Tailored to specific agency needs   | Unified and collaborative                |
+| Implementation    | Customized action plans             | Integrated execution across agencies     |
+| Reporting         | Detailed, agency-specific measures  | Standardized metrics for collective review|
+
+Next steps include aligning these approaches further to enhance cross-sector coordination and streamline performance monitoring.
+
+## Conclusion
+The analysis highlights key distinctions between the agency priority goals and cross-agency priority goals outlined in OPM’s 2022 strategy. Agency priority goals are designed to drive internal improvements within individual agencies, emphasizing specialized processes and mission-specific outcomes. In contrast, cross-agency priority goals focus on fostering collaboration, standardization, and unified public service across the federal enterprise. While both sets of goals aim to enhance performance, their scopes and implementation strategies differ significantly. The table below distills these insights for a clearer comparative perspective:
+
+| Aspect      | Agency Priority Goals                          | Cross-Agency Priority Goals                         |
+|-------------|-----------------------------------------------|-----------------------------------------------------|
+| Purpose     | Enhance internal efficiencies and service delivery | Promote collaboration and resource sharing         |
+| Focus       | Agency-specific, mission-driven improvements  | Unified public service through standardized practices|
+| Implementation | Tailored, agency-specific strategies         | Collaborative, cross-cutting coordination efforts    |
+
+The next step is to integrate these strategic insights into operational plans, ensuring alignment and maximizing overall impact.
 ========================================

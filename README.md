@@ -31,6 +31,8 @@ Open Deep Research uses:
 
 ### Installation
 
+Clone the repository and activate a virtual environment then:
+
 ```bash
 pip install -r requirements.txt
 ```

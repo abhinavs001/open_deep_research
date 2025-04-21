@@ -25,7 +25,7 @@ THREAD_CONFIG = {
 }
 
 # Topic to generate report for
-RESEARCH_TOPIC = "Summarize and compare the agency priority goals vs cross-agency priority goals as defined in OPM's 2022 strategy."
+RESEARCH_TOPIC = "Compare the R&D expenditure trends across Apple, Amazon, and Microsoft in Q1 2023. What strategic differences are reflected in their investment priorities?"
 
 # Normalize section names for consistent lookup
 def normalize_section_key(name: str) -> str:
@@ -82,7 +82,7 @@ async def main():
         
         # Use Command(resume=feedback) to send feedback and regenerate the plan
         async for event in graph.astream(Command(resume=feedback, goto="generate_report_plan", update={"feedback_on_report_plan": feedback}), 
-                                        THREAD_CONFIG, stream_mode="updates"):
+                                        THREAD_CONFIG, stream_mode="values"):
             if "sections" in event:
                 print("Updated report plan generated!")
                 sections = event.get("sections", [])

@@ -1,4 +1,4 @@
-# Open Deep Research
+# Open Deep Research integrated with RAG
  
 Open Deep Research is an open source assistant that automates research and produces customizable reports on any topic. It allows you to customize the research and writing process with specific models, prompts, report structure, and search tools. 
 
@@ -35,8 +35,6 @@ As mentioned above, ensure API keys for LLMs and search tools are set:
 export TAVILY_API_KEY=<your_tavily_api_key>
 export ANTHROPIC_API_KEY=<your_anthropic_api_key>
 ```
-
-See [src/open_deep_research/graph.ipynb](src/open_deep_research/graph.ipynb) for example usage in a Jupyter notebook:
 
 Compile the graph:
 ```python
@@ -134,28 +132,6 @@ Use this to open the Studio UI:
 - 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
 - 📚 API Docs: http://127.0.0.1:2024/docs
 ```
-
-(1) Provide a `Topic` and hit `Submit`:
-
-<img width="1326" alt="input" src="https://github.com/user-attachments/assets/de264b1b-8ea5-4090-8e72-e1ef1230262f" />
-
-(2) This will generate a report plan and present it to the user for review.
-
-(3) We can pass a string (`"..."`) with feedback to regenerate the plan based on the feedback.
-
-<img width="1326" alt="feedback" src="https://github.com/user-attachments/assets/c308e888-4642-4c74-bc78-76576a2da919" />
-
-(4) Or, we can just pass `true` to accept the plan.
-
-<img width="1480" alt="accept" src="https://github.com/user-attachments/assets/ddeeb33b-fdce-494f-af8b-bd2acc1cef06" />
-
-(5) Once accepted, the report sections will be generated.
-
-<img width="1326" alt="report_gen" src="https://github.com/user-attachments/assets/74ff01cc-e7ed-47b8-bd0c-4ef615253c46" />
-
-The report is produced as markdown.
-
-<img width="1326" alt="report" src="https://github.com/user-attachments/assets/92d9f7b7-3aea-4025-be99-7fb0d4b47289" />
 
 ## 📖 Customizing the report
 

@@ -103,7 +103,7 @@ Completed section: Conclusion
 
 The Office of Personnel Management’s 2022 strategic framework establishes clear distinctions between agency priority goals and cross-agency priority goals. The framework sets agency-specific objectives focused on internal mission execution, while simultaneously outlining collaborative initiatives that span multiple agencies. This report is motivated by the need to understand how these dual goal types support comprehensive and coordinated efforts across government. It explores how targeted internal efforts align with broader, cross-functional strategies to drive efficiency and enhanced service delivery.
 
-## Conclusion and Next Steps
+## Introduction and Next Steps
 
 This report highlights the distinct focus and scope of agency priority goals versus cross-agency goals. Agency priority goals center on tailored, mission-specific objectives, whereas cross-agency goals emphasize unified, collaborative action across departments. The following table summarizes key differences:
 
